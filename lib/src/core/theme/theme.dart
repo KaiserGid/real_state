@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:real_state/src/core/style_guide/colors.dart';
+import 'package:real_state/src/core/style_guide/padings.dart';
 
 class CustonTheme {
-  final ColorTheme colorTheme;
+  static final ColorTheme _colorTheme = ColorsA();
+  static final CustomPadding _padding = CustomPaddingImpl();
 
-  CustonTheme({
-    required this.colorTheme,
-  });
-
-  ThemeData custonTheme() {
+  static ThemeData customTheme() {
     return ThemeData(
-      primaryColor: colorTheme.primaryColor,
-      primarySwatch: colorTheme.primaryColor,
+      primaryColor: _colorTheme.primaryColor,
+      primarySwatch: _colorTheme.primaryColor,
+      colorScheme: ColorScheme.fromSwatch(primarySwatch: _colorTheme.primaryColor),
+      scaffoldBackgroundColor: _colorTheme.scaffoldBackgroundColor,
     );
   }
 }
