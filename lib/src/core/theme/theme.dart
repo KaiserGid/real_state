@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:real_state/src/core/style_guide/colors.dart';
 import 'package:real_state/src/core/style_guide/padings.dart';
 
-
 class CustonTheme {
-  static final ColorTheme _colorTheme = Colors_A();
+  static final ColorTheme _colorTheme = ColorsA();
   static final CustomPadding _padding = CustomPaddingImpl();
 
   static ThemeData customTheme() {

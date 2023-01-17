@@ -17,7 +17,7 @@ abstract class ColorTheme {
   });
 }
 
-class Colors_A implements ColorTheme {
+class ColorsA implements ColorTheme {
   @override
   MaterialColor get darkColor => const MaterialColor(0XFF000E14, <int, Color>{
         50: Color(0XFFCCCFD0),
@@ -88,3 +88,4 @@ class Colors_A implements ColorTheme {
         },
       );
 }
+p
