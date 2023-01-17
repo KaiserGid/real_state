@@ -6,13 +6,14 @@ abstract class ColorTheme {
   final MaterialColor darkColor;
   final MaterialColor secondaryLightColor;
   final MaterialColor secondaryDarkColor;
-
+  final MaterialColor scaffoldBackgroundColor;
   ColorTheme({
     required this.primaryColor,
     required this.secondaryColor,
     required this.darkColor,
     required this.secondaryLightColor,
     required this.secondaryDarkColor,
+    required this.scaffoldBackgroundColor,
   });
 }
 
@@ -31,7 +32,6 @@ class Colors_A implements ColorTheme {
         900: Color(0XFF000507),
         1000: Color(0XFF000304),
       });
-
   @override
   MaterialColor get secondaryColor => const MaterialColor(
         0XFF45BB89,
@@ -49,7 +49,6 @@ class Colors_A implements ColorTheme {
           1000: Color(0XFF0E251B),
         },
       );
-
   @override
   MaterialColor get primaryColor => const MaterialColor(
         0XFF003853,
@@ -67,7 +66,6 @@ class Colors_A implements ColorTheme {
           1000: Color(0XFF000B11),
         },
       );
-
   @override
   MaterialColor get secondaryLightColor => const MaterialColor(
         0XFF91D4C2,
@@ -75,12 +73,18 @@ class Colors_A implements ColorTheme {
           500: Color(0XFF91D4C2),
         },
       );
-
   @override
   MaterialColor get secondaryDarkColor => const MaterialColor(
         0XFF000E14,
         <int, Color>{
           500: Color(0XFF000E14),
+        },
+      );
+  @override
+  MaterialColor get scaffoldBackgroundColor => const MaterialColor(
+        0XFFE5E5E5,
+        <int, Color>{
+          500: Color(0XFFE5E5E5),
         },
       );
 }
