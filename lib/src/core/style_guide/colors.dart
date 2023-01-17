@@ -88,4 +88,3 @@ class ColorsA implements ColorTheme {
         },
       );
 }
-p
